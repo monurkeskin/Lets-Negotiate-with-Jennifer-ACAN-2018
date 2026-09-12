@@ -1,0 +1,20 @@
+{
+  "title": "Let's Negotiate with Jennifer! Towards a Speech-Based Human-Robot Negotiation — maintained code companion",
+  "version": "2.0.0",
+  "upload_type": "software",
+  "description": "Maintained research software for Let's Negotiate with Jennifer! Towards a Speech-Based Human-Robot Negotiation. Reproducibility scope and source provenance are documented in the repository.",
+  "creators": [
+    {
+      "name": "Keskin, Mehmet Onur"
+    }
+  ],
+  "license": "GPL-3.0-only",
+  "related_identifiers": [
+    {
+      "identifier": "10.1007/978-981-15-5869-6_1",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    }
+  ],
+  "doi": "10.5281/zenodo.22729002"
+}

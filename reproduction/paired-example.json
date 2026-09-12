@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "paper_id": "jennifer-negotiation-2021",
+  "result_id": "synthetic-paired-analysis",
+  "claim_scope": "synthetic-validation",
+  "analysis": "paired-summary",
+  "environment": {
+    "framework": "2.0.0"
+  },
+  "parameters": {
+    "conditions": [
+      "Human",
+      "Robot"
+    ],
+    "minimum_rounds": 0,
+    "seed": 42,
+    "bootstrap_samples": 2000
+  },
+  "inputs": [
+    {
+      "id": "synthetic-participants",
+      "path": "paired-inputs.json",
+      "sha256": "f739b19214cfaf47ff57b6a1ba087b795c7ea611079e93db618066acc9dfe534"
+    }
+  ],
+  "expected": [
+    {
+      "key": "complete_pairs",
+      "value": 3,
+      "source": "Three explicitly constructed paired fixture participants"
+    }
+  ],
+  "description": "Analysis-contract demonstration. Percentile participant bootstrap is a maintained analysis example, not a claim to recover the paper significance test."
+}

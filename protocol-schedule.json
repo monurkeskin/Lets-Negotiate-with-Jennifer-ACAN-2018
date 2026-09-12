@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "paper_id": "jennifer-negotiation-2021",
+  "protocol_summary": "Five-minute practice, ten-minute eight-item island negotiation, 30-point target; bids describe the human share.",
+  "historical_instruments_included": false,
+  "unknowns": [
+    "Original three-issue practice domain and point tables",
+    "Original questionnaire, arguments, gesture corpus and recording assets",
+    "Numerical warning and mood thresholds with historical provenance",
+    "Permitted session-level human outcomes and analysis records"
+  ],
+  "required_before_human_use": "Resolve each missing evidence item and validate the local study protocol before starting.",
+  "analysis_unit": "participant",
+  "minimum_rounds_in_either_session": 0,
+  "round_definition": "Must be supplied from the historical record; do not equate rounds with individual offers.",
+  "questionnaires": "post_session",
+  "empirical_reproduction": "unavailable: original permitted inputs and analysis provenance are not included"
+}
