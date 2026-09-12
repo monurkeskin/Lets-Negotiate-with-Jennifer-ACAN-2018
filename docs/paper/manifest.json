@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "paper_url": "https://doi.org/10.1007/978-981-15-5869-6_1",
+  "pdf_sha256": "18ffd7b0914cfdcacae50f99e1fea968b28dcb0c8db73c78ab2df8088c0508ea",
+  "pdf_reference": "Author website PDF",
+  "verification": "Compared with the cited paper PDF; page numbers count from its first page.",
+  "figures": [
+    {
+      "file": "protocol.png",
+      "figure": "Figure 1; fig-protocol",
+      "pdf_page": 3,
+      "source_file": "figures/Protocol.png",
+      "source_sha256": "47d488bf9c9c6fcabb33ef2a7ee0101a09d01f4136254eaf9cbba2a89924fc1b",
+      "sha256": "47d488bf9c9c6fcabb33ef2a7ee0101a09d01f4136254eaf9cbba2a89924fc1b",
+      "conversion": "Unmodified source image."
+    },
+    {
+      "file": "concession.png",
+      "figure": "Figure 2; fig-concession",
+      "pdf_page": 6,
+      "source_file": "figures/concession.png",
+      "source_sha256": "c4deceb06b8c12a217a238567ed26707795e79bf99c445634f47a297478fb902",
+      "sha256": "c4deceb06b8c12a217a238567ed26707795e79bf99c445634f47a297478fb902",
+      "conversion": "Unmodified source image."
+    },
+    {
+      "file": "agreement-scores.png",
+      "figure": "Figure 5; fig-averageScores",
+      "pdf_page": 9,
+      "source_file": "figures/AverageScores.png",
+      "source_sha256": "fde324b5780bef25d616759d9f26d02301ad8637e8862d850c0463d441bbf18a",
+      "sha256": "fde324b5780bef25d616759d9f26d02301ad8637e8862d850c0463d441bbf18a",
+      "conversion": "Unmodified source image.",
+      "display_file": "agreement-scores.svg",
+      "display_sha256": "9548eef3a1c5f7cedf990d6da3a9c3409419979dfb2933541e4973acd6cc8a8f",
+      "display_note": "SVG places the unmodified image over white, matching the paper and keeping black text visible in dark themes."
+    }
+  ]
+}

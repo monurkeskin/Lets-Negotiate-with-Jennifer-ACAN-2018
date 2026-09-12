@@ -6,24 +6,50 @@ Reyhan Aydoğan · Mehmet Onur Keskin · Umut Çakan
 
 [![Tests](https://github.com/monurkeskin/Lets-Negotiate-with-Jennifer-ACAN-2018/actions/workflows/tests.yml/badge.svg)](https://github.com/monurkeskin/Lets-Negotiate-with-Jennifer-ACAN-2018/actions/workflows/tests.yml)
 
-Jennifer turns resource sharing into a spoken, turn-taking interaction. A readiness notification makes the conversational order explicit; the robot chooses offers using a stochastic time-based tactic and expresses its response through predefined moods and arguments.
+Imagine dividing the supplies left on a deserted island with a robot. You want
+the food and medicine; Jennifer has her own priorities. **This paper turns that
+bargaining task into a spoken interaction**, with a clear way to signal readiness,
+make an offer and respond to a counteroffer.
 
-## Method
+## A conversation with an explicit protocol
 
-The human signals readiness and proposes a division of resources. Jennifer accepts or counteroffers. As the deadline approaches, two concession curves define the range from which the next offer is drawn. The human then accepts or rejects the response before the next exchange.
+![Paper Figure 1: Jennifer requests a readiness signal, receives an offer and accepts or counteroffers; the participant then accepts or rejects.](docs/paper/protocol.png)
 
-```mermaid
-flowchart LR
-  A[Ready] --> B[Human offer]
-  B --> C[Jennifer: accept or counteroffer]
-  C --> D[Human: accept or reject]
-  D -->|Next exchange| A
-  C --> E[Mood and spoken response]
-```
+*Figure 1 from the paper. The readiness exchange separates thinking aloud from
+making an offer. Both parties describe the resources the **human receives**.*
 
-## Study and findings
+Jennifer's time-dependent stochastic bidding tactic (TSBT) chooses an offer
+between two concession bounds. As the deadline approaches, both bounds fall.
+The robot also responds through predefined moods and arguments, connecting its
+formal decision to a phrase the person can understand.
 
-The paper introduces this speech-based protocol and evaluates Jennifer in a human–robot resource-allocation task. It provides the foundation for the later study of [tactics and gestures](https://github.com/monurkeskin/Jennifer-Why-Not-THMS-2022). **Publication context:** ACAN 2018 workshop proceedings, published as a book chapter in 2021. [Read the paper](https://doi.org/10.1007/978-981-15-5869-6_1).
+![Paper Figure 2: the upper and lower target-score bounds decrease with elapsed negotiation time.](docs/paper/concession.png)
+
+*Figure 2. The interval between the curves determines the range for Jennifer's
+next offer. The protocol and the bidding tactic have separate responsibilities.*
+
+## What the study found
+
+Thirty people negotiated with Jennifer after a practice session. The main task
+used eight indivisible resources and a ten-minute deadline; each party knew only
+its own point profile. Twenty-six negotiations reached agreement.
+
+![Paper Figure 5: Jennifer and the human participants received average agreement scores of 60.96 and 49.42.](docs/paper/agreement-scores.svg)
+
+*Figure 5 and Section 3.2, published study. Means are over the 26 agreements.*
+
+| Reported measure | Value |
+| --- | ---: |
+| Negotiations reaching agreement | 26 / 30 (86.7%) |
+| Jennifer's mean score in agreements | 60.96 / 100 |
+| Human mean score in agreements | 49.42 / 100 |
+| Agreements with a higher score for Jennifer | 15 / 26 |
+
+The paper reports higher scores for Jennifer on average in this task. It is the
+starting point for the later [tactic and gesture study](https://github.com/monurkeskin/Jennifer-Why-Not-THMS-2022),
+which asks how the bidding rule and body language interact.
+This chapter was presented at **ACAN 2018** and published in the 2021 proceedings
+volume. [Figure and result sources](docs/paper/README.md).
 
 ## What you can explore
 
