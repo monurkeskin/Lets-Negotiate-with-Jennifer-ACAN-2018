@@ -39,6 +39,13 @@ The short Solver and Appearance examples do not claim those fruit reward rules.
 
 ## Remaining evidence gaps
 
+The inspected historical mood controller uses a warning after .7 of elapsed time
+and an Offended threshold of .3. The current templates use an illustrative .8
+warning and a zero hard reservation; the paper mood adapter currently shares that
+reservation for its Offended threshold. Separating a presentation threshold from a
+hard acceptance floor is therefore an open method decision. The corresponding
+code/configuration evidence can be resolved without participant-level data.
+
 - Original three-issue practice domain and point tables.
 - Original questionnaire, arguments, gesture corpus and recording assets.
 - Numerical warning and mood thresholds with historical provenance.
