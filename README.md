@@ -5,13 +5,10 @@ Reyhan Aydoğan · Mehmet Onur Keskin · Umut Çakan
 [Paper](https://doi.org/10.1007/978-981-15-5869-6_1) · [Explore the method](METHOD.md) · [Try the code](#try-it-yourself) · [Study guide](docs/protocol.md) · [Citation](#cite-the-paper)
 
 [![Tests](https://github.com/monurkeskin/Lets-Negotiate-with-Jennifer-ACAN-2018/actions/workflows/tests.yml/badge.svg)](https://github.com/monurkeskin/Lets-Negotiate-with-Jennifer-ACAN-2018/actions/workflows/tests.yml)
-[![Software archive](https://zenodo.org/badge/DOI/10.5281/zenodo.22729002.svg)](https://doi.org/10.5281/zenodo.22729002)
-
-**Can a humanoid robot negotiate with a person through spoken offers, instead of an exchange of form fields?**
 
 Jennifer turns resource sharing into a spoken, turn-taking interaction. A readiness notification makes the conversational order explicit; the robot chooses offers using a stochastic time-based tactic and expresses its response through predefined moods and arguments.
 
-## The idea
+## Method
 
 The human signals readiness and proposes a division of resources. Jennifer accepts or counteroffers. As the deadline approaches, two concession curves define the range from which the next offer is drawn. The human then accepts or rejects the response before the next exchange.
 
@@ -24,22 +21,21 @@ flowchart LR
   C --> E[Mood and spoken response]
 ```
 
-## In the paper
+## Study and findings
 
 The paper introduces this speech-based protocol and evaluates Jennifer in a human–robot resource-allocation task. It provides the foundation for the later study of [tactics and gestures](https://github.com/monurkeskin/Jennifer-Why-Not-THMS-2022). **Publication context:** ACAN 2018 workshop proceedings, published as a book chapter in 2021. [Read the paper](https://doi.org/10.1007/978-981-15-5869-6_1).
 
-## Explore this work
+## What you can explore
 
 Follow the readiness/offer/response sequence and inspect the published eight-resource point table. The package includes the 10-minute main-session outline and a separate illustrative practice task.
 
 | Explore | Start with | What it shows |
 | --- | --- | --- |
-| Interaction protocol | `docs/protocol.md` | Follow readiness, offer, response and rejection as distinct events. |
-| Resource sharing | `configs/protocol-template.json` | Inspect the eight-resource points from the paper. |
-| Tactic | `reproduction/method.json` | Explore the time-based concession component. |
+| Interaction protocol | [docs/protocol.md](docs/protocol.md) | Follow readiness, offer, response and rejection as distinct events. |
+| Resource sharing | [configs/protocol-template.json](configs/protocol-template.json) | Inspect the eight-resource points from the paper. |
+| Tactic | [reproduction/method.json](reproduction/method.json) | Explore the time-based concession component. |
 
-This repository holds the paper-specific configurations, method checks and study
-guides. The shared [NEGOTIATOR framework](https://github.com/monurkeskin/NEGOTIATOR-IJCAI-2024) runs the negotiation,
+The configurations, method checks and study guides are specific to this paper. The shared [NEGOTIATOR framework](https://github.com/monurkeskin/NEGOTIATOR-IJCAI-2024) runs the negotiation,
 participant/conductor views and session analysis. Its exact **2.0.0** revision is
 pinned in [framework.json](framework.json); installation brings it in automatically.
 
@@ -79,14 +75,12 @@ In **New study → Import a paper or study configuration**, select
 to inspect the paper's protocol template. The [study guide](docs/protocol.md)
 explains the remaining protocol/asset requirements and device setup.
 
-## Data and reproducibility
+## Data and analysis
 
-Participant-level records and audio/video recordings are **not distributed in this
-repository**. Restricted access is compatible with sharing the method, protocol and
-analysis code; it does not require releasing human-study data publicly. The package
-provides synthetic inputs and documents which computations can be run from them.
-Recomputing the published human-study statistics additionally requires authorized
-access to the relevant inputs and the corresponding analysis specification.
+Participant records and recordings are not included. The examples use labeled
+synthetic inputs so you can run the code and inspect its calculations. Recomputing
+the human-study results requires authorized access to the original inputs and
+the matching analysis procedure.
 
 [Reproducibility guide](REPRODUCIBILITY.md) · [Paper-to-code map](paper-map.json) ·
 [Analysis guide](docs/analysis.md)
