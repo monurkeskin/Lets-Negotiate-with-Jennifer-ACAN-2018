@@ -39,13 +39,6 @@ The short Solver and Appearance examples do not claim those fruit reward rules.
 
 ## Remaining evidence gaps
 
-The inspected historical mood controller uses a warning after .7 of elapsed time
-and an Offended threshold of .3. The current templates use an illustrative .8
-warning and a zero hard reservation; the paper mood adapter currently shares that
-reservation for its Offended threshold. Separating a presentation threshold from a
-hard acceptance floor is therefore an open method decision. The corresponding
-code/configuration evidence can be resolved without participant-level data.
-
 - Original three-issue practice domain and point tables.
 - Original questionnaire, arguments, gesture corpus and recording assets.
 - Numerical warning and mood thresholds with historical provenance.
@@ -65,3 +58,22 @@ The common engine owns utility, lifecycle, logs, GUI, shared methods and device
 contracts. This repository owns paper-specific profiles, protocol choices, analysis
 rules, reproduction targets and tests. [framework.json](framework.json) pins the
 engine; [NOTICE](NOTICE) preserves original source attribution.
+
+## Social reaction and agreement thresholds
+
+Protocol revision 3 in release 2.1.0 records `offended_threshold: 0.3` separately from
+the preference reservation. This restores the low-offer social reaction while
+keeping offers below that social threshold legally negotiable. The value follows
+the historical Jennifer mood implementation; it is not an estimated optimum.
+The maintained warning fraction and mild multiplier are unchanged.
+
+Older journals without this field retain their recorded reservation-based mood
+behavior on replay. Release 2.1.0 pins the matching engine; the archived 2.0.0
+configurations retain their previous behavior.
+
+## Retained presentation choices
+
+The maintained warning fraction is .8 and the mild multiplier is .95. The
+inspected historical controller uses a .7 warning; the historical BABT wrapper
+uses .9 for its mild multiplier. The author accepted retaining the maintained
+values, so these are explicit choices rather than recovered historical constants.

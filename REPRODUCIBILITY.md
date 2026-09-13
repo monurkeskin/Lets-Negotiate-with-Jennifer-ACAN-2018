@@ -10,7 +10,7 @@ and **replicating a human finding**. The associated paper is [Let's Negotiate wi
 | `method.json` | Recompute and check against independent references |
 | `profile-1.json` | Recompute and check against independent references |
 | `paired-example.json` | Recompute and check against independent references |
-| `published-results.json` | Restricted original inputs; method/demo recipes are available separately |
+| `published-results.json` | Unavailable original inputs; no numbers fabricated |
 
 ```bash
 python verify.py --output verification-output
