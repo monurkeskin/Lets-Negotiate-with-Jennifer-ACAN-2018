@@ -5,6 +5,7 @@ Reyhan Aydoğan · Mehmet Onur Keskin · Umut Çakan
 [Paper](https://doi.org/10.1007/978-981-15-5869-6_1) · [Explore the method](METHOD.md) · [Try the code](#try-it-yourself) · [Study guide](docs/protocol.md) · [Citation](#cite-the-paper)
 
 [![Tests](https://github.com/monurkeskin/Lets-Negotiate-with-Jennifer-ACAN-2018/actions/workflows/tests.yml/badge.svg)](https://github.com/monurkeskin/Lets-Negotiate-with-Jennifer-ACAN-2018/actions/workflows/tests.yml)
+[![codecov](https://codecov.io/gh/monurkeskin/Lets-Negotiate-with-Jennifer-ACAN-2018/branch/main/graph/badge.svg)](https://codecov.io/gh/monurkeskin/Lets-Negotiate-with-Jennifer-ACAN-2018)
 
 Imagine dividing the supplies left on a deserted island with a robot. You want
 the food and medicine; Jennifer has her own priorities. **This paper turns that
